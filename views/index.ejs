@@ -18,11 +18,16 @@
     </h3>
     
     <a href="http://localhost:3000/posts/<%= post.id %>">See Post in detailed</a>
+    <a href="http://localhost:3000/posts/<%= post.id%>/edit">Edit</a>
+    <form method="post" action="/posts/<%=post.id%>/?_method=DELETE">
+        <button>Delete Post</button>
+    </form>
         </div>
     <% } %>
     <br>
     <br>
     <a href="http://localhost:3000/posts/new"> create new post</a>
+    
 </body>
 </html>
 
